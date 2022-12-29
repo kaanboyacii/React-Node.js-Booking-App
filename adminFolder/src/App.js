@@ -37,6 +37,32 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="users">
+              <Route
+                index
+                element={
+                  <ProtectedRoute>
+                    <List />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path=":userId"
+                element={
+                  <ProtectedRoute>
+                    <Single />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="new"
+                element={
+                  <ProtectedRoute>
+                    <New inputs={userInputs} title="Add New User" />
+                  </ProtectedRoute>
+                }
+              />
+            </Route>            
           </Route>
         </Routes>
       </BrowserRouter>
