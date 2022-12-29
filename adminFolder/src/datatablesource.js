@@ -21,35 +21,18 @@ export const userColumns = [
   {
     field: "country",
     headerName: "Country",
-    width: 230,
+    width: 100,
   },
   {
     field: "city",
     headerName: "City",
-    width: 230,
+    width: 100,
   },
   {
     field: "phone",
     headerName: "Phone",
-    width: 230,
-  },
-  {
-    field: "age",
-    headerName: "Age",
-    width: 100,
-  },
-  {
-    field: "status",
-    headerName: "Status",
-    width: 160,
-    renderCell: (params) => {
-      return (
-        <div className={`cellWithStatus ${params.row.status}`}>
-          {params.row.status}
-        </div>
-      );
-    },
-  },
+    width: 200,
+  }
 ];
 
 //temporary data
