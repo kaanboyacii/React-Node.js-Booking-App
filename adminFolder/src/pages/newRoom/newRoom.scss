@@ -32,13 +32,12 @@
 
       .right {
         flex: 2;
-        padding: 0px 20px;
 
         form {
           display: flex;
           flex-wrap: wrap;
           gap: 30px;
-          justify-content: space-between;
+          justify-content: space-around;
 
           .formInput {
             width: 40%;
